@@ -3,8 +3,8 @@ from Point import Point
 from Plot import Plot
 
 points = []
-x = [2,3,5,7,9]
-y = [4,5,7,10,15]
+x = [1.21,3,5.16,8.31,10.21]
+y = [1.69,5.89,4.11,5.49,8.65]
 for p in range(len(x)):
     P = Point(x[p],y[p])
     points.append(P)

@@ -25,4 +25,12 @@ class Plot:
             y.append(point.get_y())
         plt.plot(x,y)
         plt.plot(x1,y1,color='yellow')
+        for i in range(len(x)):
+            x_error = []
+            y_error = []
+            x_error.append(x[i])
+            x_error.append(x1[i])
+            y_error.append(y[i])
+            y_error.append(y1[i])
+            plt.plot(x_error,y_error,'--',color = "red",linewidth=0.5)
         plt.show()
