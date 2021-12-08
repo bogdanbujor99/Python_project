@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-import numpy as np
 
 class Plot:
     def __init__(self,list_of_points):
@@ -20,11 +19,11 @@ class Plot:
             y1.append(point.get_y())
         points = list_of_points.get_new_points()
         for point in points:
-            plt.plot(point.get_x(), point.get_y(), marker="o", markersize=7, markeredgecolor="red", markerfacecolor="red")
+            plt.plot(point.get_x(), point.get_y(), marker="o", markersize=7, markeredgecolor="black", markerfacecolor="black")
             x.append(point.get_x())
             y.append(point.get_y())
         plt.plot(x,y)
-        plt.plot(x1,y1,color='yellow')
+        plt.plot(x1,y1,color='orange')
         for i in range(len(x)):
             x_error = []
             y_error = []
